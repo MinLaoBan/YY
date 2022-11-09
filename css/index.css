@@ -1,9 +1,16 @@
 body {
   min-width: 320px;
   max-width: 750px;
+  height: 1100px !important;
   margin: 0 auto;
   background-color: #F2F4F7;
-  height: 990px;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 a {
   text-decoration: none;
@@ -134,6 +141,7 @@ a {
   opacity: 1;
 }
 .chongdian {
+  position: relative;
   background-color: #fff;
 }
 .chongdian .chongdian-hd {
@@ -226,7 +234,7 @@ a {
 .footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 20rem;
   z-index: 1000;
   display: flex;
   justify-content: space-around;

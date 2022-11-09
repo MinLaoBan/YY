@@ -1,10 +1,18 @@
 body {
     min-width: 320px;
     max-width: 750px;
+    height: 1100px !important;
     margin: 0 auto;
     background-color: #F2F4F7;
 }
-
+//清楚浮动
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
 a {
     text-decoration: none;
 }
@@ -170,8 +178,8 @@ a {
 
 // 充电学习部分
 .chongdian {
+    position: relative;
     background-color: #fff;
-
     .chongdian-hd {
         display: flex;
         justify-content: space-between;
@@ -203,7 +211,6 @@ a {
 
     .chongdian-bd {
         overflow: hidden;
-
         .swiper {
             width: 100%;
             height: 100%;
@@ -278,6 +285,10 @@ a {
 
 // 底部
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 20rem;
+    z-index: 1000;
     display: flex;
     justify-content: space-around;
     height: 3.0667rem;
