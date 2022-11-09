@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑马面面</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 引入swiper的css文件 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <section class="content">
+        <!-- 头部 -->
+        <header class="header">杨杨得亿</header>
+        <!-- nav导航栏部分 -->
+        <nav class="nav">
+            <a href="ywm.html" class="items">
+                <img src="icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="ywm.html" target="_blank" class="items">
+                <img src="icons/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="ywm.html" target="_blank" class="items">
+                <img src="icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="ywm.html" target="_blank" class="items">
+                <img src="icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="ywm.html" target="_blank" class="items">
+                <img src="icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="ywm.html" target="_blank" class="items">
+                <img src="icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- 内容go部分 -->
+        <artical class="go">
+            <a href="#">
+                <img src="images/go.png" alt="">
+            </a>
+        </artical>
+    </section>
+    <!-- 就业指导部分 -->
+    <section class="jiuye">
+        <div class="jiuye-hd">
+            <h3>就业指导</h3>
+            <a href="#">更多>></a>
+        </div>
+
+        <div class="jiuye-bd">
+            <!-- 旋转木马轮播图模块 -->
+            <div class="get_job_focus">
+                <!-- Swiper -->
+                <div class="swiper-container get_job_fo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="ywm.html" target="_blank"><img src="icons/ywm.jpg" alt=""></a>
+                            <p>MinLaoBan</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/2.jpg" alt=""></a>
+                            <p>老师教你应对面试技巧</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/3.jpg" alt=""></a>
+                            <p>老师教你应对面试技巧</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Add Arrows添加左右箭头 根据需求放到container外面 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 充电学习部分 -->
+    <section class="chongdian">
+        <div class="chongdian-hd">
+            <h3>充电学习</h3>
+            <a href="#">更多>></a>
+        </div>
+        <div class="chongdian-bd">
+            <!-- 轮播图模块 -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#"><img src="images/pic1.png" alt=""></a>
+                            <p>说地道英语，告别中式英语</p>
+                            <p>156人学习</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="ywm.html" target="_blank"><img src="icons/ywm.jpg" alt=""></a>
+                            <p>说地道英语，告别中式英语</p>
+                            <p>125人学习</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#"><img src="images/pic2.png" alt=""></a>
+                            <p>说地道英语，告别中式英语</p>
+                            <p>86人学习</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="item">
+            <a href="#">
+                <img src="icons/home.png" alt="">
+                <span>首页</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="icons/net.png" alt="">
+                <span>技术面试</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="icons/ms.png" alt="">
+                <span>模拟面试</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="icons/user.png" alt="">
+                <span>我的主页</span>
+            </a>
+        </div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script>
+        // 第一个函数里面是 就业指导轮播图
+        (function () {
+            var swiper = new Swiper('.swiper-container', {
+                // 能够显示的slide的个数
+                slidesPerView: 2,
+                // 每个slide之间的距离
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                // 添加左右箭头
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        })();
+    </script>
+</body>
+
+</html>

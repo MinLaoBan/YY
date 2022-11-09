@@ -1,0 +1,315 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+// 当屏幕大于750时，一直保持在750px
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+}
+
+// 头部
+.header {
+    height: 2.1333rem;
+    line-height: 2.1333rem;
+    font-size: .9333rem;
+    text-align: center;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.content {
+    background-color: #fff;
+}
+
+// nav导航栏部分
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    .items {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.1733rem;
+
+        img {
+            width: 3.7067rem;
+            height: 3.7067rem;
+        }
+
+        span {
+            font-size: .6667rem;
+            color: #707070;
+        }
+    }
+}
+
+// 内容go部分
+.go {
+    a {
+        width: 19.2533rem;
+        height: 4.0533rem;
+
+        img {
+            width: 19.2533rem;
+            height: 4.0533rem;
+            margin: 1.6rem .2667rem 0 .48rem;
+            padding-bottom: 1.1467rem;
+        }
+    }
+}
+
+// 就业指导部分
+.jiuye {
+    background-color: #fff !important;
+
+    .jiuye-hd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.1467rem;
+        margin-bottom: .9067rem;
+
+        h3 {
+            display: inline-block;
+            font-size: .7467rem;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 1.0133rem;
+                height: 1.0133rem;
+                margin: 0 .32rem 0 .5867rem;
+                background: url(../icons/i2.png) no-repeat;
+                vertical-align: middle;
+            }
+        }
+
+        a {
+            font-size: .5867rem;
+            color: #999999;
+            margin-right: .64rem;
+        }
+    }
+
+    .jiuye-bd {
+
+        // 轮播图
+        .get_job_focus {
+            position: relative;
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: #ccc;
+            }
+            .swiper-container {
+                height: 100%;
+                width: 14.4rem;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                // 竖向显示
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                transition: 300ms;
+                transform: scale(0.8);
+                opacity: 0.4;
+
+                a {
+                    width: 9.0133rem;
+                    height: 10.0267rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                p {
+                    width: 9.0133rem;
+                    font-size: .6667rem;
+                    margin-top: .64rem;
+                    color: #333;
+                }
+            }
+
+            // 当前选中的slide 中间的
+            .swiper-slide-active,
+            .swiper-slide-duplicate-active {
+                transform: scale(1);
+                z-index: 999;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// 充电学习部分
+.chongdian {
+    background-color: #fff;
+
+    .chongdian-hd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.1467rem;
+        margin-bottom: .9067rem;
+
+        h3 {
+            display: inline-block;
+            font-size: .7467rem;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 1.0133rem;
+                height: 1.0133rem;
+                margin: 0 .32rem 0 .5867rem;
+                background: url(../icons/i1.png) no-repeat;
+                vertical-align: middle;
+            }
+        }
+
+        a {
+            font-size: .5867rem;
+            color: #999999;
+            margin-right: .64rem;
+        }
+    }
+
+    .chongdian-bd {
+        overflow: hidden;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: .48rem;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                width: 7.7333rem;
+                height: 9.0667rem;
+                padding: .2133rem .2133rem 0 .2133rem;
+                box-shadow: 0 .1333rem .4rem rgba(0, 0, 0, .1);
+                margin-bottom: 1.0667rem;
+
+                a {
+                    width: 100%;
+                    height: 4.56rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    height: .6133rem;
+                    margin: .4rem 0 .5333rem 0;
+                    font-size: .8rem;
+
+                    &:nth-of-type(2) {
+                        font-size: .6933rem;
+                        color: #9f9f9f;
+                        padding-top: .8rem;
+                        text-align: left;
+                        margin-left: .4rem;
+                        color: #FF4400;
+
+                    }
+                }
+            }
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
+
+// 底部
+.footer {
+    display: flex;
+    justify-content: space-around;
+    height: 3.0667rem;
+    border-top: 1px solid #E2E2E2;
+    background-color: #fff;
+
+    .item {
+        width: 2.6667rem;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 1.3867rem;
+                height: 1.3867rem;
+            }
+
+            span {
+                font-size: .5867rem;
+                color: #666666;
+                margin-top: .2667rem;
+
+                &:hover {
+                    color: #5cc7f1;
+                }
+            }
+
+        }
+    }
+}
