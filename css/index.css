@@ -3,6 +3,7 @@ body {
   max-width: 750px;
   margin: 0 auto;
   background-color: #F2F4F7;
+  height: 990px;
 }
 a {
   text-decoration: none;
@@ -223,6 +224,10 @@ a {
   object-fit: cover;
 }
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-around;
   height: 3.0667rem;
